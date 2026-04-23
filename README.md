@@ -9,6 +9,8 @@
 
 A fully responsive **Invoice Management Application** built with **React** for HNG Internship Stage 2. Users can create, read, update, and delete invoices; save drafts; mark invoices as paid; filter by status; and toggle between light and dark themes. All data persists in **LocalStorage**.
 
+![Invoice App Preview](./image.png)
+
 ## 🚀 Live Demo
 
 🔗 **[View Live](https://hng-stage2-invoice-app.vercel.app/)**
