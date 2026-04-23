@@ -73,6 +73,7 @@ A fully responsive **Invoice Management Application** built with **React** for H
 
 ### Project Structure
 
+```
 invoice-app/
 ├── public/
 │ └── favicon.svg
@@ -103,7 +104,7 @@ invoice-app/
 ├── package.json
 ├── vite.config.js
 └── README.md
-
+```
 
 ### State Management
 - **InvoiceContext** — Centralized state using React Context API
