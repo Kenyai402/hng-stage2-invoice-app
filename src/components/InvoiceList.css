@@ -10,7 +10,7 @@
   justify-content: space-between;
   margin-bottom: 32px;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
 }
 
 .header-left {
@@ -35,14 +35,15 @@
 .header-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .btn-new-invoice {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 10px 20px;
   background: var(--accent-purple);
   color: white;
   border: none;
@@ -52,6 +53,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  height: 44px;
 }
 
 .btn-new-invoice:hover {
@@ -70,12 +72,6 @@
   border-radius: 50%;
   font-size: 1.2rem;
   font-weight: 700;
-}
-
-.invoice-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .btn-primary {
@@ -97,26 +93,54 @@
   transform: scale(1.02);
 }
 
+/* Filter bar - full width below header */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.invoice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media (max-width: 768px) {
   .invoice-list-page {
     padding: 24px 16px;
   }
 
   .invoice-list-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
 
   .header-right {
-    width: 100%;
-    justify-content: space-between;
+    gap: 8px;
   }
 
+  .btn-text {
+    display: inline;
+  }
+
+  .filter-bar {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .invoice-list-header {
+    gap: 12px;
+  }
+  
   .btn-text {
     display: none;
   }
 
   .btn-new-invoice {
-    padding: 12px;
+    padding: 10px 14px;
   }
 }

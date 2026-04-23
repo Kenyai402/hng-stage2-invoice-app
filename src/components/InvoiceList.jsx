@@ -30,7 +30,6 @@ export default function InvoiceList() {
           </p>
         </div>
         <div className="header-right">
-          <Filter activeFilter={activeFilter} onFilterChange={setActiveFilter} />
           <ThemeToggle />
           <button
             className="btn-primary btn-new-invoice"
@@ -41,6 +40,10 @@ export default function InvoiceList() {
           </button>
         </div>
       </header>
+
+      <div className="filter-bar">
+        <Filter activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+      </div>
 
       <main className="invoice-list-main">
         {filteredInvoices.length === 0 ? (

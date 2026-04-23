@@ -13,8 +13,11 @@
 .filter-fieldset {
   border: none;
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0;
+
 }
 
 .filter-label {
@@ -22,15 +25,18 @@
 }
 
 .filter-chip {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 20px;
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 24px;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-tertiary);
   background: transparent;
   border: 1px solid transparent;
   transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  height: 44px;
 }
 
 .filter-chip:hover {
