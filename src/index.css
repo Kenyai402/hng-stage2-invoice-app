@@ -1,6 +1,4 @@
-/* ==============================================
-   CSS VARIABLES - LIGHT & DARK THEME
-   ============================================== */
+/* CSS VARIABLES - LIGHT & DARK THEME */
 
 :root,
 [data-theme="light"] {
@@ -49,9 +47,7 @@
   --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* ==============================================
-   RESET & BASE
-   ============================================== */
+/* RESET & BASE */
 
 *,
 *::before,
@@ -66,7 +62,7 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
@@ -97,9 +93,7 @@ ul {
   list-style: none;
 }
 
-/* ==============================================
-   SCROLLBAR STYLING
-   ============================================== */
+/* SCROLLBAR STYLING */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -118,18 +112,14 @@ ul {
   background: var(--accent-purple);
 }
 
-/* ==============================================
-   FOCUS STYLES (Accessibility)
-   ============================================== */
+/* FOCUS STYLES (Accessibility) */
 
 :focus-visible {
   outline: 2px solid var(--accent-purple);
   outline-offset: 2px;
 }
 
-/* ==============================================
-   ANIMATIONS
-   ============================================== */
+/* ANIMATIONS */
 
 @keyframes fadeIn {
   from {
