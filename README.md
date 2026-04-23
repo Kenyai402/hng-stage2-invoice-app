@@ -11,7 +11,7 @@ A fully responsive **Invoice Management Application** built with **React** for H
 
 ## 🚀 Live Demo
 
-🔗 **[View Live](https://hng-stage2-invoice-app.vercel.app)**
+🔗 **[View Live](https://hng-stage2-invoice-app.vercel.app/)**
 
 ---
 
@@ -135,16 +135,19 @@ User Action → Context Function → State Update → LocalStorage Sync → UI R
    cd invoice-app
 
 2. **Install dependencies**
-   ```npm install
+   ```
+   npm install
 
 3. **Start development server**
-   ```npm run dev
-
-   Open http://localhost:5173 in your browser.
+   ```
+   npm run dev
+   ```
+   Open http://localhost:5175 in your browser.
 
 4. **Build for production**
-   ```npm run build
-
+   ```
+   npm run build
+   ```
    Output in dist/ folder.
 
 5. **Preview production build**
