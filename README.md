@@ -72,6 +72,7 @@ A fully responsive **Invoice Management Application** built with **React** for H
 ## 🏗️ Architecture
 
 ### Project Structure
+
 invoice-app/
 ├── public/
 │ └── favicon.svg
